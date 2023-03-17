@@ -1,0 +1,50 @@
+.picture {
+  display: flex;
+  flex-direction: column;
+  background-color: #bfdfcc;
+  border-radius: 12px;
+  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+}
+.names {
+  color: #3a2f66;
+  font-family: "Istok Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+}
+.pokemon-type {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 3px;
+  text-align: center;
+  font-family: "Istok Web";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 17px;
+  width: 100px;
+  height: 100px;
+  margin-top: 8px;
+}
+.pokemon-style{    
+    border-radius: 3px;
+}     
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 56px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  align-self: center;
+}
