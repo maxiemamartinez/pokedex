@@ -1,0 +1,54 @@
+.a{
+    display: flex;
+    flex-direction: column;
+    
+}
+.exhaust{
+        display: flex;
+        flex-direction: column  ;
+        border: 1px solid black;
+        width: 50%;
+    }
+.dates {
+    display: flex;
+    width: 50%;
+    flex-direction: column; 
+
+}
+.group {
+    display: flex;
+    flex-direction: column;
+}
+.types {
+    display: flex;
+    align-self: flex-end;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 144.61px;
+    height: 37.56px;
+    align-items: center;
+    justify-content: center;
+}
+.pictureInd{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 566.3px;
+    justify-content: center;
+    height: 573.83px;
+}
+.info {
+    display: flex;
+    border: 1px solid black ;
+    width: 50%;
+    gap: 9px;
+    justify-content: center; 
+    align-items: flex-start;   
+}
+.sec{
+    display: flex;
+}
+.descript {
+    display: flex;
+    align-self: flex-end;
+}

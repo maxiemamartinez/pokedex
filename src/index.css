@@ -18,5 +18,11 @@ code {
   background-color: #726B8F;
 }
 .search {
-  
+}
+.body {
+  width: 100%;
+  border: 2.5px solid #726B8F;
+  margin: 25px;
+  background-color: rgba(217, 217, 217, 0.35);
+  border-radius: 19px;
 }

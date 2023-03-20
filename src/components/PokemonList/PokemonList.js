@@ -1,5 +1,6 @@
+import { getValue } from "@testing-library/user-event/dist/utils";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import PokemonDetails from "../PokemonDetails";
 import "./pokemon-list.css";
 
@@ -10,7 +11,7 @@ async function getPokemonData(pokemon) {
   return response.data;
 }
 
-function PokemonList() {
+function PokemonList({ filter }) {
   const [pokemonList, setPokemonList] = useState([]);
 
   useEffect(() => {
@@ -30,11 +31,17 @@ function PokemonList() {
     fetchPokemons();
   }, []);
 
+  const pokemons = useMemo(() => {
+    if (filter.length > 0 ) {
+      return pokemonList.filter((x) => x.name.includes(filter));
+    }
+
+    return pokemonList;
+  }, [filter, pokemonList]);
+
   return (
     <div className="container">
-      {pokemonList.map((pokemon) => {
-        console.log(pokemon);
-
+      {pokemons.map((pokemon) => {
         return (
           <PokemonDetails
             key={pokemon.name}
