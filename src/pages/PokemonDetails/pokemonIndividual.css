@@ -1,23 +1,38 @@
-.a{
+
+.root{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    height: 100%;
+    background-color: #D9D9D959;
+    border: 2px solid #726B8F;
+    border-radius: 19px;
 }
 .exhaust{
         display: flex;
         flex-direction: column  ;
-        border: 1px solid black;
         width: 50%;
     }
-.dates {
-    display: flex;
-    width: 50%;
-    flex-direction: column; 
-
-}
 .group {
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+.groupId{
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    color: rgba(58, 47, 102, 0.78);
+
+}
+.groupName{
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 60px;
+    color: #3A2F66;
 }
 .types {
     display: flex;
@@ -26,29 +41,53 @@
     border-radius: 3px;
     width: 144.61px;
     height: 37.56px;
-    align-items: center;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
     justify-content: center;
+
 }
 .pictureInd{
     display: flex;
     align-items: center;
-    border: 1px solid black;
-    width: 566.3px;
+    border-radius: 32px;
     justify-content: center;
-    height: 573.83px;
-}
-.info {
-    display: flex;
-    border: 1px solid black ;
     width: 50%;
-    gap: 9px;
-    justify-content: center; 
-    align-items: flex-start;   
+    height: 100vh;
 }
+
 .sec{
     display: flex;
+    width: 100%;
+    height: 100%;
 }
-.descript {
+.third {
     display: flex;
-    align-self: flex-end;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+.info {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;  
+    height: 50%;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+
+}
+.descrip {
+display: flex;
+flex-direction: column;
+align-self: center;
+align-items: flex-end;
+}
+.evolutions {
+
 }
