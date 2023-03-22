@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import axios from "axios";
 import "./pokemonIndividual.css";
+import React, { useEffect, useState } from "react";
 import capitalizeName from "../../utils/capitalizeName";
 import colors from "../../utils/types";
+import PokemonEvolution from "./PokemonEvolution";
 
 export async function loader({ params }) {
   return params.pokemonId;
@@ -29,8 +30,8 @@ const PokemonDetails = () => {
     axios.get(url).then((response) => {
       setPokemon(response.data);
     });
-  }, []);
-  console.log(pokemon);
+  }, [url]);
+ // console.log(pokemon);
 
   if (!pokemon) {
     return <div>Loading</div>;
@@ -45,10 +46,8 @@ const PokemonDetails = () => {
         </div>
         <div>
         <div className="types">
-        
-
          {pokemon.types.map((x) => (
-            <div
+            <div className="type"
               key={x.type.name}
               style={{ backgroundColor: colors[x.type.name] }}
             >
@@ -59,19 +58,19 @@ const PokemonDetails = () => {
       </div>
       </div>
       <div className="sec">
-        <div className="pictureInd">
+        <div className="pictureInd" style={{ background: colors[pokemon.types[0].type.name], opacity: 0.8 }}>
           <img src={pokemon.sprites.other.dream_world.front_default}/>
         </div>
         <div className="third">
           <div className="info">
-            <div onClick={() => setTab("forms")}>
-              Evolutions
-              <div className="evolutions">A</div>
-            </div>{" "}
+            <div className="bar" onClick={() => setTab("forms")}>Evolutions</div>{" "}
             <div onClick={() => setTab("details")}>Details</div>{" "}
             <div onClick={() => setTab("types")}>Types</div>{" "}
             <div onClick={() => setTab("Stats")}>Stats</div>{" "}
             <div onClick={() => setTab("Wear")}>Wear</div>{" "}
+          </div>
+          <div className="results">
+          <PokemonEvolution/>
           </div>
           <div className="descrip">First evolution</div>
         </div>
