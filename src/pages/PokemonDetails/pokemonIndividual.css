@@ -97,8 +97,12 @@ align-items: flex-end;
 }
 .results {
 display: flex;
-align-items: center;
-flex-direction: column;
-border: 1px solid blue;
-height: 50%;
+justify-content: space-around;
+height: 30%;
+width: 100%;
+}
+.evolutionPic{
+    display: flex;
+    height: 120px;
+    width: 120px;
 }
