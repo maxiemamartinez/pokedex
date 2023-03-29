@@ -1,108 +1,105 @@
-
-.root{
-    display: flex;
-    flex-direction: column; 
-    height: 100%;
-    background: rgba(217, 217, 217, 0.35);
-    border: 2px solid #726B8F;
-    border-radius: 19px;
-    gap: 10px;
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: rgba(217, 217, 217, 0.35);
+  border: 2px solid #726b8f;
+  border-radius: 19px;
+  gap: 10px;
 }
-.exhaust{
-        display: flex;
-        flex-direction: column  ;
-        width: 50%;
-    }
+.exhaust {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 .group {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-.groupId{
-    font-family: 'Istok Web';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 36px;
-    color: rgba(58, 47, 102, 0.78);
-
+.groupId {
+  font-family: "Istok Web";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 36px;
+  color: rgba(58, 47, 102, 0.78);
 }
-.groupName{
-    font-family: 'Istok Web';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 60px;
-    color: #3A2F66;
+.groupName {
+  font-family: "Istok Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  color: #3a2f66;
 }
 .types {
-    display: flex;
-    align-self: flex-end;
-    justify-content: flex-end;
-    font-family: 'Istok Web';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-    gap: 12px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  font-family: "Istok Web";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  gap: 12px;
 }
 .type {
-    display: flex;
-    align-items: center;
-    border-radius: 3px;
-    width: 144.61px;
-    height: 37.56px;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  width: 144.61px;
+  height: 37.56px;
+  justify-content: center;
 }
-.pictureInd{
-    display: flex;
-    align-items: center;
-    border-radius: 32px;
-    justify-content: center;
-    width: 50%;
-    height: 100vh;
-    margin: 25px;
+.pictureInd {
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  margin: 25px;
 }
 
-.sec{
-    display: flex;
-    width: 100%;
-    height: 100%;
+.sec {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 .third {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
 }
 .info {
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;  
-    height: 20%;
-    font-family: 'Istok Web';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 43px;
-    text-align: center;
-
-}
-.descrip {
-display: flex;
-flex-direction: column;
-align-self: center;
-align-items: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 20%;
+  font-family: "Istok Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
 }
 .results {
-display: flex;
-justify-content: space-around;
-height: 30%;
-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  font-family: "Istok Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
 }
-.evolutionPic{
-    display: flex;
-    height: 120px;
-    width: 120px;
+.evolutionPic {
+  display: flex;
+  height: 120px;
+  width: 120px;
 }

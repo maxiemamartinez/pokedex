@@ -5,22 +5,23 @@ import React, { useEffect, useState } from "react";
 import capitalizeName from "../../utils/capitalizeName";
 import colors from "../../utils/types";
 import PokemonEvolution from "./PokemonEvolution";
+import Description from "../../components/Description";
 
 export async function loader({ params }) {
   return params.pokemonId;
 }
 
-//const TABS_COMPONENTS = {
-//forms: <Form />,
-//details: <Details />,
-//type: <Types />,
-//stats: <Stats />,
-//wear: <Wear/>
-
-//};
-
+/*
+const TABS_COMPONENTS = {
+  evolutions: <Evolutions />,
+  details: <Details />,
+  type: <Types />,
+  stats: <Stats />,
+  wear: <Wear />,
+};
+*/
 const PokemonDetails = () => {
-  const [tab, setTab] = useState("forms");
+  const [tab, setTab] = useState("");
 
   const pokemonId = useLoaderData();
   const url = `http://pokeapi.co/api/v2/pokemon/${pokemonId}`;
@@ -32,8 +33,6 @@ const PokemonDetails = () => {
       setPokemon(response.data);
     });
   }, [url]);
-  // console.log(pokemon);
-
   if (!pokemon) {
     return <div>Loading</div>;
   }
@@ -84,9 +83,11 @@ const PokemonDetails = () => {
             <div onClick={() => setTab("Wear")}>Wear</div>{" "}
           </div>
           <div className="results">
-            <PokemonEvolution onEvolutionClick={setSelectedPokemon} />
+            {tab === "forms" && (
+              <PokemonEvolution onEvolutionClick={setSelectedPokemon} />
+            )}
+            {tab === "details" && <Description />}
           </div>
-          <div className="descrip">First evolution</div>
         </div>
       </div>
     </div>
