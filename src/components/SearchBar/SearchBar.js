@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineSearch } from 'react-icons/ai';
-import {BsFilter} from 'react-icons/bs';
 import './search-bar.css';
 
 function SearchBar({ onChange, value }) {
@@ -11,11 +10,8 @@ function SearchBar({ onChange, value }) {
             <div className="filter-box">
                 <AiOutlineSearch className="icon" size={25}/>
                 <input className="input" onChange={onChange} type='text' placeholder="Name or number" value={value} />
-                <div className="filter">
-                    <BsFilter size={35}/>
                 </div>
             </div>
-        </div>
     )
 }
 export default SearchBar;

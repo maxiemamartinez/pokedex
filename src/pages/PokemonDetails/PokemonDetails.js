@@ -10,16 +10,6 @@ import Description from "../../components/Description";
 export async function loader({ params }) {
   return params.pokemonId;
 }
-
-/*
-const TABS_COMPONENTS = {
-  evolutions: <Evolutions />,
-  details: <Details />,
-  type: <Types />,
-  stats: <Stats />,
-  wear: <Wear />,
-};
-*/
 const PokemonDetails = () => {
   const [tab, setTab] = useState("");
 
@@ -28,7 +18,7 @@ const PokemonDetails = () => {
   const [pokemon, setPokemon] = useState(null);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     axios.get(url).then((response) => {
       setPokemon(response.data);
     });
@@ -78,9 +68,6 @@ const PokemonDetails = () => {
               Evolutions
             </div>{" "}
             <div onClick={() => setTab("details")}>Details</div>{" "}
-            <div onClick={() => setTab("types")}>Types</div>{" "}
-            <div onClick={() => setTab("Stats")}>Stats</div>{" "}
-            <div onClick={() => setTab("Wear")}>Wear</div>{" "}
           </div>
           <div className="results">
             {tab === "forms" && (

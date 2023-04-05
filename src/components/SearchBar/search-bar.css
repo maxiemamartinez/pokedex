@@ -1,32 +1,26 @@
 .searchbar {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: #3A2F66;
-
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #3a2f66;
 }
 
 .filter-box {
-    align-items: center;
-    display: flex;
-
+  align-items: center;
+  display: flex;
 }
 
 .icon {
-    padding: 15px;
-    position: absolute;
+  padding: 15px;
+  position: absolute;
 }
 
 .input {
-    padding-left: 50px;
-    opacity: 20%;
-    background-color: #EDEEF3;
-    border-radius: 7px;
-    width: 490px;
-    height: 40px;
-    font-size: large;
-}
-.filter {
-    align-items: center;
+  padding-left: 50px;
+  opacity: 20%;
+  background-color: #edeef3;
+  border-radius: 7px;
+  width: 490px;
+  height: 40px;
+  font-size: large;
 }
